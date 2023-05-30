@@ -33,7 +33,7 @@ namespace WinFormsApp2
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
-        
+
 
 
         private void Labyrinth_MouseEnter(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace WinFormsApp2
                 Close();
                 Form3 level = new();
                 level.ShowDialog();
-
+                level.Close();
             }
 
         }
@@ -91,13 +91,13 @@ namespace WinFormsApp2
                 goLeft = goRight = goUp = goDown = youWin = false;
                 goLeft2 = goRight2 = goUp2 = goDown2 = youWin2 = false;
                 endSound.Play();
+                this.Close();
                 MessageBox.Show("Player2 Win");
                 Close();
                 Form3 level = new();
                 level.ShowDialog();
-
             }
-            
+
         }
         private void isKeyDown(object sender, KeyEventArgs e)
         {
@@ -276,6 +276,11 @@ namespace WinFormsApp2
             CheckForCollision();
             checkFinish();
             checkFinish2();
+        }
+
+        private void Finish_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

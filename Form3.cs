@@ -42,7 +42,7 @@ namespace WinFormsApp2
         {
             Console.WriteLine("Start2");
             startSound.Play();
-            Point start = new Point(0, 180);
+            Point start = new Point(100, 0);
             player22.Location = start;
         }
 
@@ -267,6 +267,11 @@ namespace WinFormsApp2
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Finish_Click(object sender, EventArgs e)
         {
 
         }

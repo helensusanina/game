@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-Form3.Designer",
+      "appliesTo": "Form3.Designer.cs",
+      "type": "launch"
+    }
+  ]
+}
